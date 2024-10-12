@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<section class="about">
+    </head>
+    <div class="about-img">
+        <img class="mylogo" src="{% static 'images/Conchina-Daviz-Favicon-BSIT3-2.png' %}">
+    </div>
+    <div class="about-text">
+        <h1>ABOUT</h1>
+        <p>
+            Hello! I’m glad you’ve reached this part of my web app. This simple application has taught me the basics of
+            Django,
+            from startup to this point. It has helped and encouraged me to recognize that there’s still so much more to
+            learn about
+            this framework. This web app, which includes static files and templates, has both challenged me and
+            motivated me to expand
+            my knowledge as a college student. I’m proud to have created this project. Thank you for taking the time to
+            read this "About" page.
+            This web app contains a list of subject codes for the first semester of third-year BSIT students at Cavite
+            State University, Bacoor
+            Campus.
+        </p>
+        <a href="{% url 'home' %}">Return Home.</a>
+    </div>
+</section>
+{% endblock content %}
